@@ -1,0 +1,6 @@
+.desktop-only {
+	display: block;
+	@media screen and (max-width: $screen-ipad-max) {
+		display: none;
+	}
+}

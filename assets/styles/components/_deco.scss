@@ -1,0 +1,252 @@
+.form {
+  background-image: url('../img/square-gold.svg');
+  background-repeat: no-repeat;
+  height: 110px;
+  width: 110px;
+  background-size: contain;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+}
+
+.square {
+  background-image: url('../img/square-gold.svg');
+  left: -15px;
+  top: -55px;
+}
+  
+.square-cut {
+  background-image: url('../img/square-cut-gold.svg');
+  left: -60px;
+  top: -70px;
+  height: 200px;
+  width: 200px;
+}
+  
+.circle-cut {
+  background-image: url('../img/circle-cut-gold.svg');
+  height: 300px;
+  width: 300px;
+  bottom: -100px;
+  left: -150px;
+  top: initial;
+  transform: rotate(130deg);
+}
+
+.projets .square-cut {
+    display: none;
+}
+  
+.circle-cut-purple {
+  background-image: url('../img/circle-cut-purple.svg');
+  height: 440px;
+  width: 440px;
+  top: initial;
+  left: initial;
+  bottom: -100px;
+  right: -220px;
+  z-index: -5;
+}
+  
+.circle-purple {
+  background-image: url('../img/circle-purple.svg');
+  height: 245px;
+  width: 245px;
+  top: -150px;
+  left: -120px;
+}
+
+.square-cut-menu, .circle-cut-menu, .circle-purple-menu, .circle-cut-purple-menu, .square-menu {
+  display: none;
+}
+  
+@include sm {
+
+  .square-cut {
+    left: 300px;
+    top: -130px;
+    height: 200px;
+    width: 200px;
+  }
+  .projets .square {
+    left: 330px;
+  }
+
+  .projets .circle-cut {
+    height: 440px;
+    width: 440px;
+    top: initial;
+    left: -170px;
+    bottom: -200px;
+  }
+
+  .projets .square-cut {
+      display: block;
+      left: initial;
+      right: -100px;
+      transform: rotate(65deg);
+      top: 160px;
+  }
+
+  .illus .circle-purple {
+      z-index: 1;
+  }
+
+  .illus .circle-cut-purple {
+      bottom: -170px;
+  }
+
+  .square-cut-menu, .circle-cut-menu, .circle-purple-menu, .circle-cut-purple-menu, .square-menu {
+    display: block;
+  }
+
+  .square-cut-menu {
+    background-image: url('../img/square-cut-gold.svg');
+    left: 35%;
+    top: -80px;
+    height: 165px;
+    width: 165px;
+  }
+
+  .circle-cut-menu {
+    background-image: url('../img/circle-cut-gold.svg');
+    height: 420px;
+    width: 420px;
+    top: initial;
+    left: initial;
+    bottom: -140px;
+    left: -200px;
+    transform: rotate(145deg);
+  }
+
+  .circle-purple-menu {
+    background-image: url('../img/circle-purple.svg');
+    height: 60px;
+    width: 60px;
+    top: 30%;
+    left: 10%;
+  }
+
+  .circle-cut-purple-menu {
+    background-image: url('../img/circle-cut-purple.svg');
+    height: 120px;
+    width: 120px;
+    top: 35%;
+    left: initial;
+    right: 5%;
+  }
+
+  .square-menu {
+    background-image: url('../img/square-gold.svg');
+    height: 230px;
+    width: 230px;
+    top: initial;
+    left: initial;
+    bottom: -115px;
+    right: -115px;
+  }
+}
+  
+@media screen and (min-width: 1024px) {
+  .projets .square {
+      left: 480px;
+  }
+    
+  @media screen and (min-height: 600px) {
+    .home .square-cut {
+      left: 0;
+      top: -140px;
+      height: 300px;
+      width: 300px;
+    }
+
+    .projets .square-cut {
+        right: -120px;
+        left: initial;
+        top: 120px;
+        z-index: -5;
+    }
+
+    .projets .circle-cut {
+      left: -170px;
+      bottom: -150px; 
+    }
+
+    .circle-cut-purple {
+      right: -150px;
+    }
+  }
+
+  @media screen and (min-height: 1366px) {
+    .home .square-cut {
+        height: 340px;
+        width: 340px;
+        left: -10px;
+        top: -140px;
+    }
+
+    .projets .circle-cut {
+        left: -220px;
+    }
+
+    .illus .circle-purple {
+        height: 300px;
+        width: 300px;
+        top: -120px;
+        left: -90px;
+    }
+
+    .illus .circle-cut-purple {
+        height: 500px;
+        width: 500px;
+        right: -160px;
+    }
+  }
+}
+
+@include lg {
+  .home .square-cut {
+    height: 200px;
+    width: 200px;
+    top: 100px;
+    left: -120px;
+  }
+
+  .projets .square {
+    left: 50%;
+  }
+
+  .projets .circle-cut {
+    left: -170px;
+    bottom: -220px;
+  }
+
+  .projets .square-cut {
+    height: 235px;
+    width: 235px;
+    left: initial;
+    right: -140px;
+    top: 150px;
+  }
+
+  .illus .circle-purple {
+    top: -90px;
+    left: -70px;
+  }
+
+  .illus .circle-cut-purple {
+    right: -220px;
+  }
+
+  .square-cut-menu {
+    left: 40%;
+    top: -70px;
+  }
+
+  .circle-purple-menu {
+    top: 20%;
+    left: 15%;
+  }
+}

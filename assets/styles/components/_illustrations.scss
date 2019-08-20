@@ -1,0 +1,14 @@
+.illus .container {
+    overflow-x: hidden;
+}
+
+.content__illus {
+    padding-bottom: 0;
+}
+
+.container__items {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}

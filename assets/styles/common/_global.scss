@@ -1,0 +1,73 @@
+html {
+	@include font-text(1.5rem, null, $white, 1.5);
+
+	font-size: 62.5%; // 10px for almost all browsers
+	overflow-x: hidden; // Pour IOS
+
+	&.overflow {
+		overflow: hidden;
+
+		body {
+			overflow: hidden;
+		}
+	} // For responsive menu
+}
+
+body {
+	background-color: $bg;
+	position: relative;
+	overflow: hidden;
+}
+
+#wpadminbar {
+	display: none; // For wordpress
+}
+
+h1, h2, h3, h4, h5 {
+	line-height: 1.5;
+	@include font-title();
+}
+
+h1 {
+	font-size: 4.2rem;
+	font-weight: 700;
+	font-style: italic;
+	margin: 0;
+	@include ipad {
+		font-size: 6.4rem;
+	}
+}
+
+h2 {
+	font-size: 2.7rem;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 41px;
+	@include ipad {
+		font-size: 3.6rem;
+	}
+}
+
+h3 {
+	
+}
+
+h4 {
+	
+}
+
+h5 {
+	
+}
+
+div, p, ul, li {
+	font-size: 1.5rem;
+	@include ipad {
+		font-size: 2rem;
+	}
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}

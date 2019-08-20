@@ -1,0 +1,37 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, p, li, ul, div {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: .75rem 1.25rem;
+	margin: 0;
+	border: none;
+
+	white-space: nowrap;
+	text-decoration: none;
+	appearance: none;
+	cursor: pointer;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}

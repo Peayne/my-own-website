@@ -1,0 +1,13 @@
+a {
+	display: inline-block;
+	font-size: 1.5rem;
+	color: $black;
+	@include ipad {
+		font-size: 2rem;
+	}
+}
+
+button {
+	@include font-text(1.8rem, null, black, 1);
+	outline: none;
+}

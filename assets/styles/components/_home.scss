@@ -1,0 +1,177 @@
+.content {
+    padding-top: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-bottom: 380px;
+  }
+
+  .redirection {
+    margin-top: 30px;
+  }
+
+  .redirection__item {
+      text-align: center;
+  }
+
+  .redirection__item + .redirection__item {
+    margin-top: 30px;
+  }
+
+  .home .cta {
+      align-self: flex-start;
+      margin-top: 48px;
+  }
+
+  .margauxbg {
+    background: url('../img/margaux-membre.svg') no-repeat;
+    pointer-events: none;
+    position: absolute;
+    height: 315px;
+    width: 270px;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    left: 50%;
+    z-index: -1;
+  }
+
+  .home h2 {
+      color: $purple;
+  }
+
+  .home .link__mail {
+      align-self: center;
+      margin-top: 48px;
+  }
+
+  @media screen and (min-width: 600px) {
+      .content {
+          padding-top: 40%;
+      }
+  }
+
+  @include sm {
+    .content {
+        padding: 0;
+        height: 100vh;
+    }
+
+    .redirection__item {
+        text-align: left;
+    }
+
+    .redirection__item + .redirection__item {
+        margin-top: 40px;
+    }
+
+    .margauxbg {
+        height: 700px;
+        width: 610px;
+        left: 390px;
+        transform: translate(0);
+    }
+
+    .redirection {
+        margin-top: 48px;
+    }
+
+    .home .link__mail {
+        align-self: flex-start;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    @media screen and (min-height: 600px) {
+        .margauxbg {
+            height: 690px;
+            width: 600px;
+            left: 600px;
+        }
+    
+        .content {
+            height: initial;
+            padding-top: 20%;
+        }
+    }
+
+    @media screen and (min-height: 1000px) {
+        .content {
+            height: 100vh;
+            padding: 0;
+        }
+    
+        .redirection {
+            width: 50%;
+            display: flex;
+        }
+    
+        .redirection__item + .redirection__item {
+            margin-top: 0;
+            margin-left: 20%;
+        }
+    
+        .margauxbg {
+            background: url('../img/margaux-membre-formless.svg') no-repeat;
+            height: 950px;
+            width: 820px;
+            left: 480px;
+        }
+
+        .home .col-6 {
+            width: calc(100% / 12 * 7);
+        }
+    }
+
+  }
+
+  @include lg {
+    .content {
+        padding: 0;
+        height: 100vh;
+    }
+
+    .redirection {
+        display: flex;
+        margin-top: 48px;
+    }
+
+    .redirection__item + .redirection__item {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+
+    .margauxbg {
+        background: url('../img/margaux-membre.svg') no-repeat;
+        height: 700px;
+        width: 610px;
+        left: initial;
+        right: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    .content {
+        height: initial;
+        padding: 10% 0;
+    }  
+  }
+
+  @media screen and (min-width: 1440px) {
+      .content {
+          height: 100vh;
+          padding: 0;
+      }
+  }
+
+  @media screen and (min-width: 1600px) {
+      .margauxbg {
+        height: 850px;
+        width: 740px;
+      }
+  }
+
+  @media screen and (min-width: 1920px) {
+      .content {
+        padding-top: 0;
+      }
+  }

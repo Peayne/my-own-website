@@ -18,42 +18,108 @@
     <link rel="stylesheet" href="dist/styles/main.css"/>
 </head>
 <body class="projets">
-  <div class="form rempimg">Illustration d'un carré dégradé doré</div>
-  <header>
-    <ul class="nav container">
-      <li class="nav__item logo"><a href="index.html" class="rempimg">Margaux Membré</a></li>
-      <li class="nav__item menu"><a class="rempimg">Menu</a></li>
-    </ul>
-  </header>
-  <div class="form square-cut rempimg">Illustration d'un carré dégradé doré</div>
-  <main class="container">
-    <section class="content content__projects">
-      <h1 class="title__center">Projets Web</h1>
-      <div class="content__container">
-        <div class="content__text col col-6">
-          <h2 class="subtitle__red"><span class="number">01.</span> Mythic</h2>
-          <p>Mythic est un travail réalisé pour la fin de mes études.&nbsp;Il s’agit d’une web app qui traite de la mythologie grecque.&nbsp;Il a fallu que je m’occupe de réaliser toutes les illustrations, l’UX, l’UI, le développement front et le backend.</p>
-          <div class="sub-info-container">
-            <ul class="info-container">
-                <li class="info-container__item"><h4 class="little-title">Année</h4> <span class="info">2019</span></li>
-                <li class="info-container__item"><h4 class="little-title">Contexte</h4> <span class="info">Études</span></li>
-              </ul>
-          </div>
-          <a href="http://margauxmembre.fr/projets/tfe/" class="cta-works" target="_blank">En savoir plus</a>
-        </div>
-        <div class="content__image col col-5">
-          <div class="mythic rempimg">Logo de Mythic</div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <nav class="slider__container">
-    <ul class="slider container">
-      <li class="slide slide__left"><img src="dist/img/left-arrow.svg" alt="Flèche vers la gauche." ></li>
-      <li class="slide slide__right"><img src="dist/img/right-arrow.svg" alt="Flèche vers la droite."></li>
-    </ul>
-  </nav>
-  <div class="form circle-cut rempimg">Illustration d'un rond dégradé doré</div>
-  <script src="dist/scripts/main.js"></script>
+    <div class="form square rempimg">Illustration d'un carré dégradé doré</div>
+    <header>
+        <ul class="nav container">
+            <li class="nav__item logo"><a href="index.html" class="rempimg">Margaux Membré</a></li>
+            <li class="nav__item menu"><a class="rempimg">Menu</a></li>
+        </ul>
+    </header>
+    <div class="burger-container">
+        <div class="form square-cut-menu rempimg">Illustration d'un carré dégradé doré</div>
+        <div class="form circle-purple-menu rempimg">Illustration d'un cercle dégradé violet et bleu</div>
+        <ul class="burger__nav">
+            <li class="burger__item"><a class="link" href="index.html">Accueil</a></li>
+            <li class="burger__item"><a class="link link__active" href="projets.html">Projets Web</a></li>
+            <li class="burger__item"><a class="link" href="illustrations.html">Illustrations</a></li>
+        </ul>
+        <div class="form circle-cut-purple-menu rempimg">Illustration d'un cercle dégradé violet et bleu</div>
+        <div class="form circle-cut-menu rempimg">Illustration d'un rond dégradé doré</div>
+        <div class="form square-menu rempimg">Illustration d'un rond dégradé doré</div>
+    </div>
+    <div class="form square-cut rempimg">Illustration d'un carré dégradé doré</div>
+    <main class="container">
+        <section class="content content__projects">
+            <h1 class="title__center">Projets Web</h1>
+            <div class="container__slider">
+                <ul class="slider">
+                    <li class="slider__item content__container">
+                        <div class="content__text col col-6">
+                            <h2 class="subtitle">Mythic</h2>
+                            <p>Mythic est un travail réalisé pour la fin de mes études.&nbsp;Il s’agit d’une web app qui traite de la mythologie grecque.&nbsp;Il a fallu que je m’occupe de réaliser toutes les illustrations, l’UX, l’UI, le développement frontend et backend.</p>
+                            <div class="sub-info-container">
+                                <ul class="info-container">
+                                    <li class="info-container__item"><h4 class="little-title">Année</h4> <span class="info">2019</span></li>
+                                    <li class="info-container__item"><h4 class="little-title">Contexte</h4> <span class="info">Études</span></li>
+                                </ul>
+                            </div>
+                            <a href="http://margauxmembre.fr/projets/tfe/" class="cta-works" target="_blank">Découvrir le projet</a>
+                        </div>
+                        <div class="content__image col col-5">
+                            <div class="logo-projet rempimg">Logo de Mythic</div>
+                        </div>
+                    </li>
+                    <li class="slider__item content__container">
+                        <div class="content__text col col-6">
+                            <h2 class="subtitle__blue">Les Zamis d'Al</h2>
+                            <p>Les Z’amis d’Al, c’est une borne interactive créée pour permettre aux enfants de patienter chez le médecin.&nbsp;C’est un moyen ludique pour en apprendre plus sur les petits tracas quotidiens, avec un dessin animé et des petits jeux&#8202;!</p>
+                            <div class="sub-info-container">
+                                <ul class="info-container">
+                                    <li class="info-container__item"><h4 class="little-title__blue">Année</h4> <span class="info">2019</span></li>
+                                    <li class="info-container__item"><h4 class="little-title__blue">Contexte</h4> <span class="info">Études</span></li>
+                                </ul>
+                            </div>
+                            <a href="http://margauxmembre.fr/projets/ilab/" class="cta-works__blue" target="_blank">Découvrir le projet</a>
+                        </div>
+                        <div class="content__image col col-5">
+                            <div class="logo-projet__zamis rempimg">Logo des Zamis d'Al</div>
+                        </div>
+                    </li>
+                    <li class="slider__item content__container">
+                        <div class="content__text col col-6">
+                            <h2 class="subtitle__green">Phi Architectes</h2>
+                            <p>La demande était simple&nbsp;: utiliser des mots imposés pour créer un concept.&nbsp;Les nôtres étaient&nbsp;: redondants, urbain, écologique et espace.&nbsp;C’est ainsi que nous avons eu l’idée de créer un cabinet d’architecture utilisant l’espace urbain pour un projet écologique de maisons.</p>
+                            <div class="sub-info-container">
+                                <ul class="info-container">
+                                    <li class="info-container__item"><h4 class="little-title__green">Année</h4> <span class="info">2019</span></li>
+                                    <li class="info-container__item"><h4 class="little-title__green">Contexte</h4> <span class="info">Études</span></li>
+                                </ul>
+                            </div>
+                            <a href="http://margauxmembre.fr/kooka/phi_architectes/" class="cta-works__green" target="_blank">Découvrir le projet</a>
+                        </div>
+                        <div class="content__image col col-5">
+                            <div class="logo-projet__phi rempimg">Logo de Phi Architectes</div>
+                        </div>
+                    </li>
+                    <li class="slider__item content__container">
+                        <div class="content__text col col-6">
+                            <h2 class="subtitle__sky">Les Bizarreries de Lucie</h2>
+                            <p>Les Bizarreries de Lucie est un Side-project que j’ai dû réaliser en tant que travail de fin d’année.&nbsp;C’est un storytelling autour d’une petite fille qui découvre un monde étrange en suivant une licorne à travers son jardin.</p>
+                            <div class="sub-info-container">
+                                <ul class="info-container">
+                                    <li class="info-container__item"><h4 class="little-title__pink">Année</h4> <span class="info">2019</span></li>
+                                    <li class="info-container__item"><h4 class="little-title__pink">Contexte</h4> <span class="info">Études</span></li>
+                                </ul>
+                            </div>
+                            <a href="http://margauxmembre.fr/projets/tfa/" class="cta-works__pink" target="_blank">Découvrir le projet</a>
+                        </div>
+                        <div class="content__image col col-5">
+                            <div class="logo-projet__lucie rempimg">Logo des Bizarreries de Lucie</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="slider__nav">
+                <li><button class="slide slide__left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.544" height="42.652" viewBox="0 0 29.544 42.652"><path class="hovercolor" d="M23.5 36.7L11.1 22 22.5 6.4c.8-1.1.6-2.7-.6-3.5-1.1-.8-2.7-.6-3.5.6L5.9 20.7s-.1.1-.1.2-.1.2-.1.2c0 .1-.1.1-.1.2s-.1.2-.1.2v1c0 .1 0 .2.1.2 0 .1.1.2.1.2 0 .1.1.1.1.2s.1.2.2.2l.1.1 13.6 16.2c.5.6 1.2.9 1.9.9.6 0 1.1-.2 1.6-.6 1-.6 1.2-2.2.3-3.2z" fill="#fff"/></svg>
+                </button></li>
+                <li><button class="slide slide__right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.989" height="43.39" viewBox="0 0 29.989 43.39"><path class="hovercolor" d="M24.3 21.7c0-.1.1-.2.1-.2v-.2-.2-.2-.2-.2c0-.1 0-.2-.1-.2 0-.1-.1-.2-.1-.2 0-.1-.1-.1-.1-.2s-.1-.2-.2-.2l-.1-.1L10 2.8c-.9-1.1-2.5-1.2-3.6-.3-1 .9-1.2 2.4-.3 3.5l12.6 15L7.1 37c-.8 1.1-.6 2.7.6 3.5.4.3 1 .5 1.5.5.8 0 1.5-.4 2-1L24 22.3s.1-.1.1-.2.1-.2.1-.2.1-.1.1-.2z" fill="#fff"/></svg>
+                </button></li>
+            </ul>
+        </section>
+    </main>
+    <div class="form circle-cut rempimg">Illustration d'un rond dégradé doré</div>
+    <script src="dist/scripts/main.js"></script>
 </body>
 </html>

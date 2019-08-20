@@ -1,0 +1,95 @@
+// Responsive.
+@mixin lg() {
+	@media screen and (min-width: $screen-lg-max) {
+		@content;
+	}
+}
+
+@mixin ipad() {
+	@media screen and (min-width: $screen-ipad-max) {
+		@content;
+	}
+}
+
+@mixin md() {
+	@media screen and (min-width: $screen-md-max) {
+		@content;
+	}
+}
+
+@mixin sm() {
+	@media screen and (min-width: $screen-sm-max) {
+		@content;
+	}
+}
+
+@mixin xs() {
+	@media screen and (min-width: $screen-xs-max) {
+		@content;
+	}
+}
+
+@mixin iphone-6() {
+	@media screen and (min-width: $screen-6-max) {
+		@content;
+	}
+}
+
+@mixin iphone-5() {
+	@media screen and (min-width: $screen-5-max) {
+		@content;
+	}
+}
+
+// Position.
+@mixin position($position: null, $values: null) {
+	@if $position {
+		position: $position;
+	}
+	@if length($values) >= 1 {
+		top: nth($values, 1);
+	}
+	@if length($values) >= 2 {
+		right: nth($values, 2);
+	}
+	@if length($values) >= 3 {
+		bottom: nth($values, 3);
+	}
+	@if length($values) >= 4 {
+		left: nth($values, 4);
+	}
+}
+
+// https://medium.com/@justinbrazeau/10-useful-sass-mixins-for-automation-833cdee9d69b
+@mixin center($position: null) {
+	position: absolute;
+
+	@if $position == 'vertical' {
+		top: 50%;
+		transform: translate3d(0,-50%,0);
+	} @else if $position == 'horizontal' {
+		left: 50%;
+		transform: translate3d(-50%,0,0);
+	} @else {
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%,-50%,0);
+	}
+}
+
+@mixin size($size: null) {
+	height: $size;
+	width: $size;
+}
+
+// Shadow.
+@mixin shadow($opacity) {
+	box-shadow: 0 0 10px rgba(0,0,0,$opacity);
+}
+
+// Extend.
+%pseudo-elements {
+	position: absolute;
+	content: '';
+	display: block;
+}

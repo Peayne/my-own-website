@@ -1,0 +1,52 @@
+// Import your own font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+@mixin font-text($size: null, $weight: null, $color: null, $line-height: null) {
+	font-family: 'Fira Sans', sans-serif; // Add your main text font
+	font-style: normal;
+	@if ($weight) {
+		@if $weight == 'medium' {
+			font-weight: 500; // Change it depending of the font
+		} @elseif $weight == 'regular' {
+			font-weight: 400;
+		}
+	} @else {
+		font-weight: 400;
+	}
+	@if ($size) {
+		font-size: $size;
+	}
+	@if ($color) {
+		color: $color;
+	}
+	@if ($line-height) {
+		line-height: $line-height;
+	}
+	// Exemple usage:
+	// @include font-text(1.6rem, light, null, 1.4);
+}
+
+@mixin font-title($size: null, $weight: null, $color: null, $line-height: null) {
+	font-family: 'Playfair Display', serif; // Add your main text font
+	font-style: normal;
+	@if ($weight) {
+		@if $weight == 'regular' {
+			font-weight: 400;
+		} @elseif $weight == 'bold' {
+			font-weight: 700;
+		}
+	} @else {
+		font-weight: 400;
+	}
+	@if ($size) {
+		font-size: $size;
+	}
+	@if ($color) {
+		color: $color;
+	}
+	@if ($line-height) {
+		line-height: $line-height;
+	}
+	// Exemple usage:
+	// @include font-text(1.6rem, light, null, 1.4);
+}

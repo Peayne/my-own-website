@@ -1,0 +1,29 @@
+// Colors.
+$white: #fff;
+$black: #000;
+$red: #a23131;
+$purple: #AA80FF;
+$bg: #1d1d1d;
+$mythic-yellow: #FFD039;
+$mythic-red: #CA364C;
+$purple-gradient: linear-gradient(90deg, #96f, #617fdf);
+$gold-gradient: linear-gradient(-90deg, #ffd039, #b97200);
+
+// Breakpoints.
+$screen-lg-max: 1250px;
+$screen-mm-max: 1050px;
+$screen-ipad-max: 1024px;
+$screen-md-max: 992px;
+$screen-sm-max: 768px;
+$screen-xs-max: 576px;
+$screen-6-max: 375px;
+$screen-5-max: 320px;
+
+// Layout.
+$row: calc(100% / 12 * 1);
+$gutter: 8px;
+
+// Cubic bezier.
+$cubic: cubic-bezier(0.19, 1, 0.22, 1);
+$cubicQuick: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$cubicFade: cubic-bezier(0.16, 0.96, 0.28, 0.98);

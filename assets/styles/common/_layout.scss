@@ -1,0 +1,178 @@
+.container {
+	max-width: 1200px;
+	width: 83%;
+	// padding: 0 4rem;
+	margin: 0 auto;
+	box-sizing: initial;
+}
+
+.container__active {
+	height: 100vh;
+}
+
+.container-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -$gutter;
+
+	&--center {
+		justify-content: center;
+	}
+}
+
+.col {
+	display: inline-block;
+	// padding: 0 $gutter;
+
+	&.no-gutter {
+		padding: 0;
+	}
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		width: calc(100% / 12 * #{$i})
+	}
+}
+
+
+.rempimg {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+// .cta {
+// 	position: relative;
+// 	display: inline-block;
+// 	background: $purple-gradient;
+// 	color: $white;
+// 	font-size: 1.6rem;
+// 	border-radius: 50px;
+// 	padding: 20px 70px 18px 70px;
+// 	text-transform: uppercase;
+// 	font-weight: 500;
+// 	z-index: 1;
+// }
+
+// .cta::before {
+// 	position: absolute;
+// 	content: "";
+// 	top: 0;
+// 	right: 0;
+// 	left: 0;
+// 	bottom: 0;
+// 	background: $gold-gradient;
+// 	z-index: -1;
+// 	transition: all .5s ease;
+// 	opacity: 0;
+// 	border-radius: 50px;
+// }
+
+// .cta:hover::before {
+// 	opacity: 1;
+// }
+
+.link {
+	@include font-title(1.8rem, null, $white, null);
+	font-weight: 700;
+	font-style: italic;
+	padding-bottom: 5px;
+	position: relative;
+	@include sm {
+		font-size: 2.7rem;
+	}
+}
+
+.link:hover, .link:focus, .link:active {
+	color: $purple;
+}
+
+.link::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	height: 2px;
+	background-color: $purple;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.link:hover::after, .link:focus::after, .link:active::after {
+	background-color: $white;
+}
+
+.link__active {
+	color: $purple;
+}
+
+.link__active::after {
+	background-color: initial;
+}
+
+.space {
+	margin-top: 45px;
+}
+
+.subtitle {
+	color: $mythic-red;
+	margin-top: 60px;
+	@include ipad {
+		font-size: 4.7rem;
+	}
+}
+
+.subtitle__blue {
+	@extend .subtitle;
+	color: #069CA1;
+}
+
+.subtitle__green {
+	@extend .subtitle;
+	color: #9CBE9F;
+}
+
+.subtitle__sky {
+	@extend .subtitle;
+	color: #9AB9DE;
+}
+  
+.little-title {
+	color: $mythic-yellow;
+	font-family: 'Playfair Display SC', serif;
+}
+
+.little-title__blue {
+	@extend .little-title;
+	color: #348DBA;
+}
+
+.little-title__green {
+	@extend .little-title;
+	color: #308555;
+}
+
+.little-title__pink {
+	@extend .little-title;
+	color: #E8788E;
+}
+  
+.title__center {
+	text-align: center;
+}
+  
+.title__center--illu {
+	margin-bottom: 60px;
+}
+
+@include iphone-5 {
+	.col {
+		width: 100%;
+	}
+}

@@ -1,0 +1,174 @@
+.projets .container {
+    overflow-x: hidden;
+}
+
+.container__slider {
+    width: 100%;
+}
+
+.content__projects {
+    padding-top: 50%;
+    padding-bottom: 0;
+}
+
+.content__text {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.info {
+    @include font-title;
+    font-style: italic;
+}
+
+.cta-works {
+    color: $white;
+    text-transform: uppercase;
+    border: 2px solid $mythic-yellow;
+    border-radius: 50px;
+    padding: 15px 25px 14px;
+    margin-top: 55px;
+    align-self: center;
+    transition: all .5s ease;
+    &__blue {
+        @extend .cta-works;
+        border: 2px solid #348DBA;
+    }
+
+    &__green {
+        @extend .cta-works;
+        border: 2px solid #308555;
+    }
+
+    &__pink {
+        @extend .cta-works;
+        border: 2px solid #E8788E;
+    }
+}
+
+.cta-works:hover {
+    background-color: $mythic-yellow;
+    color: $bg;
+}
+
+.cta-works__blue:hover {
+    background-color: #348DBA;
+}
+
+.cta-works__green:hover {
+    background-color: #308555;
+}
+
+.cta-works__pink:hover {
+    background-color: #E8788E;
+}
+
+.logo-projet {
+    background-image: url("../img/logo-mythic.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 195px;
+    margin-top: 90px;
+
+    &__zamis {
+        @extend .logo-projet;
+        background-image: url("../img/logo_zamis-al.svg");
+    }
+
+    &__phi {
+        @extend .logo-projet;
+        background-image: url("../img/logo_phi.svg");
+    }
+
+    &__lucie {
+        @extend .logo-projet;
+        background-image: url("../img/logo_bizarreries-lucie.svg");
+    }
+}
+
+@include sm {
+    .content__projects {
+        padding: 0;
+    }
+
+    .content__container {
+        display: flex;
+        align-items: center;
+        flex-flow: row-reverse wrap;
+        justify-content: flex-end;
+    }
+
+    .col-5 {
+        width: calc(100% / 12 * 5);
+    }
+
+    .info-container {
+        justify-content: flex-start;
+    }
+
+    .info-container__item + .info-container__item {
+        margin-left: 50px;
+    }
+
+    .cta-works {
+        align-self: flex-start;
+    }
+
+    .col-6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    .logo-projet {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    @media screen and (min-height: 600px) {
+        .content__projects {
+            padding-top: 20%;
+        }
+    }
+
+    @media screen and (min-height: 1366px) {
+        .projets {
+            height: 100vh;
+            overflow: hidden;
+        }
+    
+        .content__projects {
+            height: 100vh;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .content__projects {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .content__projects {
+        height: initial;
+        padding: 10% 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .content__projects {
+        height: 100vh;
+        padding: 0;
+    }
+}

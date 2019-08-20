@@ -1,0 +1,48 @@
+header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color: $bg;
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__item {
+    color: $white;
+}
+
+.logo a {
+    background: url('../img/logo_margaux-membre.svg') no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    display: none;
+}
+
+@include sm {
+
+    header {
+        background: initial;
+    }
+
+    .logo {
+        display: block;
+        z-index: 5;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@include lg {
+    header {
+        background: initial;
+    }
+}
