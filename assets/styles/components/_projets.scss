@@ -36,37 +36,40 @@
     margin-top: 55px;
     align-self: center;
     transition: all .5s ease;
+    &:hover {
+        background-color: $mythic-yellow;
+        color: $bg;
+    }
     &__blue {
         @extend .cta-works;
         border: 2px solid #348DBA;
+        &:hover {
+            background-color: #348DBA;
+        }
     }
 
     &__green {
         @extend .cta-works;
         border: 2px solid #308555;
+        &:hover {
+            background-color: #308555;
+        }
     }
 
     &__pink {
         @extend .cta-works;
         border: 2px solid #E8788E;
+        &:hover {
+            background-color: #E8788E;
+        }
     }
-}
-
-.cta-works:hover {
-    background-color: $mythic-yellow;
-    color: $bg;
-}
-
-.cta-works__blue:hover {
-    background-color: #348DBA;
-}
-
-.cta-works__green:hover {
-    background-color: #308555;
-}
-
-.cta-works__pink:hover {
-    background-color: #E8788E;
+    &__challenge {
+        @extend .cta-works;
+        border: 2px solid #fd4b6b;
+        &:hover {
+            background-color: #fd4b6b;
+        }
+    }
 }
 
 .logo-projet {
@@ -90,6 +93,10 @@
     &__lucie {
         @extend .logo-projet;
         background-image: url("../img/logo_bizarreries-lucie.svg");
+    }
+    &__challenge {
+        @extend .logo-projet;
+        background-image: url("../img/logo_challenge.svg");
     }
 }
 

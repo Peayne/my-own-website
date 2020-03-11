@@ -10,6 +10,7 @@ if (document.body.classList.contains("home") == false) {
     var calculPosition;
     var index = 1;
 }
+
 if (document.body.classList.contains("illus")) {
 
     var x = window.matchMedia("(max-width: 499px)")

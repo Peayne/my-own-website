@@ -4,6 +4,7 @@
 
 .content__illus {
     padding-bottom: 0;
+    padding-top: 25%;
 }
 
 .container__items {
@@ -11,4 +12,10 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
+}
+
+@include sm {
+    .content__illus {
+        padding-top: 0;
+    }
 }

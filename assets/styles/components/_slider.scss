@@ -20,12 +20,15 @@
 .slider__nav {
     display: flex;
     justify-content: space-between;
-    margin: 25% 0 20%;
+    margin-bottom: 20%;
 }
 
 .slide {
     background: none;
     padding: 10px;
+    .hovercolor {
+        transition: all 1s ease;
+    }
 }
 
 .arrow {

@@ -1,7 +1,6 @@
 .container {
 	max-width: 1200px;
 	width: 83%;
-	// padding: 0 4rem;
 	margin: 0 auto;
 	box-sizing: initial;
 }
@@ -47,43 +46,13 @@
 	overflow: hidden;
 }
 
-// .cta {
-// 	position: relative;
-// 	display: inline-block;
-// 	background: $purple-gradient;
-// 	color: $white;
-// 	font-size: 1.6rem;
-// 	border-radius: 50px;
-// 	padding: 20px 70px 18px 70px;
-// 	text-transform: uppercase;
-// 	font-weight: 500;
-// 	z-index: 1;
-// }
-
-// .cta::before {
-// 	position: absolute;
-// 	content: "";
-// 	top: 0;
-// 	right: 0;
-// 	left: 0;
-// 	bottom: 0;
-// 	background: $gold-gradient;
-// 	z-index: -1;
-// 	transition: all .5s ease;
-// 	opacity: 0;
-// 	border-radius: 50px;
-// }
-
-// .cta:hover::before {
-// 	opacity: 1;
-// }
-
 .link {
 	@include font-title(1.8rem, null, $white, null);
 	font-weight: 700;
 	font-style: italic;
 	padding-bottom: 5px;
 	position: relative;
+	transition: all .5s ease;
 	@include sm {
 		font-size: 2.7rem;
 	}
@@ -102,6 +71,7 @@
 	width: 100%;
 	bottom: 0;
 	left: 0;
+	transition: all .5s ease;
 }
 
 .link:hover::after, .link:focus::after, .link:active::after {
@@ -126,41 +96,35 @@
 	@include ipad {
 		font-size: 4.7rem;
 	}
-}
-
-.subtitle__blue {
-	@extend .subtitle;
-	color: #069CA1;
-}
-
-.subtitle__green {
-	@extend .subtitle;
-	color: #9CBE9F;
-}
-
-.subtitle__sky {
-	@extend .subtitle;
-	color: #9AB9DE;
+	&__blue {
+		color: #069CA1;
+	}
+	&__green {
+		color: #9CBE9F;
+	}
+	&__sky {
+		color: #9AB9DE;
+	}
+	&__pink {
+		color: #F7D6E0;
+	}
 }
   
 .little-title {
 	color: $mythic-yellow;
 	font-family: 'Playfair Display SC', serif;
-}
-
-.little-title__blue {
-	@extend .little-title;
-	color: #348DBA;
-}
-
-.little-title__green {
-	@extend .little-title;
-	color: #308555;
-}
-
-.little-title__pink {
-	@extend .little-title;
-	color: #E8788E;
+	&__blue {
+		color: #348DBA;
+	}
+	&__green {
+		color: #308555;
+	}
+	&__pink {
+		color: #E8788E;
+	}
+	&__challenge {
+		color: #fd4b6b;
+	}
 }
   
 .title__center {

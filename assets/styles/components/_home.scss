@@ -4,26 +4,26 @@
     flex-flow: column wrap;
     justify-content: center;
     padding-bottom: 380px;
-  }
+}
 
-  .redirection {
+.redirection {
     margin-top: 30px;
-  }
+}
 
-  .redirection__item {
-      text-align: center;
-  }
+.redirection__item {
+    text-align: center;
+}
 
-  .redirection__item + .redirection__item {
-    margin-top: 30px;
-  }
+.redirection__item + .redirection__item {
+margin-top: 30px;
+}
 
-  .home .cta {
-      align-self: flex-start;
-      margin-top: 48px;
-  }
+.home .cta {
+    align-self: flex-start;
+    margin-top: 48px;
+}
 
-  .margauxbg {
+.margauxbg {
     background: url('../img/margaux-membre.svg') no-repeat;
     pointer-events: none;
     position: absolute;
@@ -33,24 +33,24 @@
     transform: translate(-50%, 0);
     left: 50%;
     z-index: -1;
-  }
+}
 
-  .home h2 {
-      color: $purple;
-  }
+.home h2 {
+    color: $purple;
+}
 
-  .home .link__mail {
-      align-self: center;
-      margin-top: 48px;
-  }
+.home .link__mail {
+    align-self: center;
+    margin-top: 48px;
+}
 
-  @media screen and (min-width: 600px) {
-      .content {
-          padding-top: 40%;
-      }
-  }
+@media screen and (min-width: 600px) {
+    .content {
+        padding-top: 40%;
+    }
+}
 
-  @include sm {
+@include sm {
     .content {
         padding: 0;
         height: 100vh;
@@ -65,9 +65,9 @@
     }
 
     .margauxbg {
-        height: 700px;
-        width: 610px;
-        left: 390px;
+        height: 790px;
+        width: 690px;
+        left: 370px;
         transform: translate(0);
     }
 
@@ -78,16 +78,16 @@
     .home .link__mail {
         align-self: flex-start;
     }
-  }
+}
 
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     @media screen and (min-height: 600px) {
         .margauxbg {
             height: 690px;
             width: 600px;
             left: 600px;
         }
-    
+
         .content {
             height: initial;
             padding-top: 20%;
@@ -99,17 +99,17 @@
             height: 100vh;
             padding: 0;
         }
-    
+
         .redirection {
             width: 50%;
             display: flex;
         }
-    
+
         .redirection__item + .redirection__item {
             margin-top: 0;
             margin-left: 20%;
         }
-    
+
         .margauxbg {
             background: url('../img/margaux-membre-formless.svg') no-repeat;
             height: 950px;
@@ -122,7 +122,7 @@
         }
     }
 
-  }
+}
 
   @include lg {
     .content {

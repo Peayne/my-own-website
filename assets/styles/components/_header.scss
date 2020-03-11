@@ -41,6 +41,19 @@ header {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    @media screen and (min-height: 600px) {
+        header {
+            background-color: $bg;
+        }
+    }
+    @media screen and (min-height: 1366px) {
+        header {
+            background-color: initial;
+        }
+    }
+}
+
 @include lg {
     header {
         background: initial;
